@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diki Bramanta Roni | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Diki<span>.</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#education">Pendidikan</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h1>Halo, Saya <span>Diki Bramanta Roni</span></h1>
+
+            <h2>Mahasiswa Teknik Informatika</h2>
+
+            <p>
+                Mahasiswa aktif Program Studi Teknik Informatika Universitas Lampung
+                yang sedang menempuh semester 3. Saya memiliki minat pada bidang
+                pemrograman, software engineering, dan terus mengembangkan kemampuan
+                dalam dunia teknologi.
+            </p>
+
+            <a href="#contact" class="btn">
+                Hubungi Saya
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TENTANG ================= -->
+
+    <section id="about" class="section">
+
+        <h2 class="title">Tentang Saya</h2>
+
+        <div class="card">
+
+            <p>
+                Saya merupakan mahasiswa aktif Program Studi Teknik Informatika
+                Universitas Lampung. Saya senang mempelajari teknologi baru,
+                khususnya pengembangan perangkat lunak menggunakan bahasa Python.
+                Saya memiliki semangat belajar yang tinggi, mampu bekerja sama
+                dalam tim, serta terus meningkatkan kemampuan agar siap
+                menghadapi dunia kerja di bidang teknologi informasi.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PENDIDIKAN ================= -->
+
+    <section id="education" class="section">
+
+        <h2 class="title">Riwayat Pendidikan</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>2025 - Sekarang</h3>
+                <h4>S1 Teknik Informatika</h4>
+                <p>Universitas Lampung</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2022 - 2025</h3>
+                <h4>SMAN 2 Bandar Lampung</h4>
+                <p>Jurusan IPA</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PENGALAMAN ================= -->
+
+    <section id="experience" class="section">
+
+        <h2 class="title">Pengalaman</h2>
+
+        <div class="card">
+
+            <p>
+                Saat ini saya masih fokus menempuh pendidikan di bidang Teknik
+                Informatika dan terus mengembangkan kemampuan pemrograman melalui
+                tugas perkuliahan, latihan, dan belajar secara mandiri.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SKILL ================= -->
+
+    <section id="skills" class="section">
+
+        <h2 class="title">Keahlian</h2>
+
+        <div class="skill-box">
+
+            <div class="skill">
+
+                <div class="skill-name">
+                    Python
+                    <span>75%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar python"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECT ================= -->
+
+    <section id="project" class="section">
+
+        <h2 class="title">Project</h2>
+
+        <div class="filter">
+
+            <button class="filter-btn active" data-filter="all">
+                Semua
+            </button>
+
+            <button class="filter-btn" data-filter="python">
+                Python
+            </button>
+
+            <button class="filter-btn" data-filter="web">
+                Web Dev
+            </button>
+
+            <button class="filter-btn" data-filter="iot">
+                IoT
+            </button>
+
+        </div>
+
+        <div class="projects">
+
+            <div class="project-card python">
+
+                <h3>Sistem Rental Warnet</h3>
+
+                <p>
+                    Program manajemen penyewaan komputer menggunakan
+                    Python dan konsep Hash Map.
+                </p>
+
+            </div>
+
+            <div class="project-card web">
+
+                <h3>Website SIPTOBO</h3>
+
+                <p>
+                    Website pemesanan tiket bus menggunakan
+                    HTML, CSS, dan JavaScript.
+                </p>
+
+            </div>
+
+            <div class="project-card iot">
+
+                <h3>Monitoring Suhu</h3>
+
+                <p>
+                    Prototype monitoring suhu ruangan berbasis IoT.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= KONTAK ================= -->
+
+    <section id="contact" class="section">
+
+        <h2 class="title">Hubungi Saya</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Nama Lengkap">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email">
+
+            <textarea
+                id="message"
+                placeholder="Tulis pesan..."></textarea>
+
+            <!-- Pesan error dari JavaScript -->
+
+            <p id="error" class="error"></p>
+
+            <button type="submit">
+                Kirim Pesan
+            </button>
+
+        </form>
+
+        <div class="info">
+
+            <p>
+                📷 Instagram :
+                <a href="https://instagram.com/average_npc1" target="_blank">
+                    @average_npc1
+                </a>
+            </p>
+
+            <p>
+                📧 Email :
+                <a href="mailto:dikibramanta56@gmail.com">
+                    dikibramanta56@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📱 Telepon :
+                <a href="tel:082176475493">
+                    082176475493
+                </a>
+            </p>
+
+            <p>
+                💻 GitHub :
+                <a href="https://github.com/dikibramanta56" target="_blank">
+                    github.com/dikibramanta56
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Diki Bramanta Roni | Portfolio
+        </p>
+
+    </footer>
+
+    <!-- ================= POPUP ================= -->
+
+    <div id="popup">
+
+        <div class="popup-content">
+
+            <h2>Terima Kasih!</h2>
+
+            <p>Pesan berhasil dikirim.</p>
+
+            <button id="closePopup">
+                Tutup
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Tombol kembali ke atas -->
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+</body>
+
+</html>
